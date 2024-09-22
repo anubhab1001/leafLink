@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> 
+             <h1 id ="para">SIGN IN</h1>
+        </div>
+        <div class="field-1">
+                <input class="email" type="email" placeholder="Mail-ID"/>
+        </div>
+        <div class="field-2">
+            <input class="password" type="password" placeholder="Password" name="Password"/>  
+        </div>
+        <p id ="msg"> Forgot Password?</p>
+        <div class="field-4">
+            <input class="submit-login" id="submitBtn" value="Submit Form" type="submit" name="Log-in"/><a href=""></a>
+            <!--<p id="field-4-text">Sign up</p>-->
+        </div>
+        <p id ="msg"> Don't have an account? <a href="WsignUpindex.html"> Sign Up</a> </p>
+        <br>
+        <br>
+        <div class="break">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="line1">
+          
+        </div><p>&nbsp; &nbsp;&nbsp;  </p>
+        <div class="or">or&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="line2">
+          
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="field-5">
+            <p id="field-5-text">Continue with Google </p>
+        </div>
+        <div class="field-6">
+            <p id="field-6-text">Continue with Phone</p>
+        </div>
+        
+    </div>
+
+    <script src="login.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>

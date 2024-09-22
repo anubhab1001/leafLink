@@ -1,0 +1,129 @@
+*{
+    border: 0 ;
+    margin : 0 ;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #70df73;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a2d49;
+    padding: 10px;
+    height: 35px;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+
+.navbar a:hover {
+    /*background-color: #e0e0e0;*/
+    border: 2px solid ;
+    border-radius: 5px;
+
+}
+
+
+.right-links {
+    margin-left: auto;
+}
+
+.motto-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    
+}
+
+
+.motto-text {
+    max-width: 50%;
+}
+
+.motto-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.motto-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+.motto-images {
+    display: flex;
+    gap: 10px;
+}
+
+.motto-images img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flex-column-section {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.content-box {
+    background-color: #ffffff;
+    height : 200px;
+    width : 300px;
+   
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.content-box p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+.see-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.see-more button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.see-more button:hover {
+    background-color: #555;
+}
+
+.footer{
+    background-color: #0a2d49;
+    color: white;
+    text-align: center;
+    height: 35px;
+    padding-top: 20px;
+}

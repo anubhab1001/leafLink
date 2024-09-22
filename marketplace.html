@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Hosting Marketplace Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Web Hosting Marketplace - Host Your Website</h1>
+    <header>
+        <div class="navbar">
+            
+            <div class="left-links">
+                <a href="index.html">Home</a>
+                <a href="#">What We Do</a>
+                <a href="https://www.websitecarbon.com/">Carbon foot print calculator</a>
+                <a href="marketplace.html">Host your Hosting Service in Market Place </a>
+            </div>
+            
+       
+            <div class="right-links">
+                <a href="#">Sign Up</a>
+                <a href="#">Sign In</a>
+            </div>
+        </div>
+    </header>
+    <form id="hostingForm">
+        <!-- Section 1: Basic Information -->
+        <h2>Basic Information</h2>
+        <label for="websiteName">Website Name:</label>
+        <input type="text" id="websiteName" name="websiteName" required><br><br>
+
+        <label for="domainName">Domain Name:</label>
+        <input type="text" id="domainName" name="domainName" required><br><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="3" required></textarea><br><br>
+
+        <!-- Section 2: Hosting Plan Details -->
+        <h2>Hosting Plan Details</h2>
+        <label for="planType">Plan Type:</label>
+        <select id="planType" name="planType" required>
+            <option value="shared">Shared</option>
+            <option value="vps">VPS</option>
+            <option value="dedicated">Dedicated</option>
+            <option value="cloud">Cloud</option>
+        </select><br><br>
+
+        <label for="pricing">Pricing (USD):</label>
+        <input type="number" id="pricing" name="pricing" required><br><br>
+
+        <label for="billingCycle">Billing Cycle:</label>
+        <select id="billingCycle" name="billingCycle" required>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+        </select><br><br>
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required><br><br>
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" required><br><br>
+
+        <!-- Section 3: Technical Specifications -->
+        <h2>Technical Specifications</h2>
+        <label for="storageSpace">Storage Space (GB):</label>
+        <input type="number" id="storageSpace" name="storageSpace" required><br><br>
+
+        <label for="bandwidth">Bandwidth (GB):</label>
+        <input type="number" id="bandwidth" name="bandwidth" required><br><br>
+
+        <label for="ram">RAM (GB):</label>
+        <input type="number" id="ram" name="ram" required><br><br>
+
+        <label for="cpu">CPU (Cores):</label>
+        <input type="number" id="cpu" name="cpu" required><br><br>
+
+        <label for="ssl">SSL Certificate:</label>
+        <select id="ssl" name="ssl" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <!-- Section 4: Owner/Contact Information -->
+        <h2>Owner/Contact Information</h2>
+        <label for="ownerName">Owner Name:</label>
+        <input type="text" id="ownerName" name="ownerName" required><br><br>
+
+        <label for="contactEmail">Contact Email:</label>
+        <input type="email" id="contactEmail" name="contactEmail" required><br><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber"><br><br>
+
+        <label for="billingAddress">Billing Address:</label>
+        <input type="text" id="billingAddress" name="billingAddress" required><br><br>
+
+        <!-- Section 5: Management Information -->
+        <h2>Management Information</h2>
+        <label for="cpanelAccess">Control Panel Access (URL):</label>
+        <input type="url" id="cpanelAccess" name="cpanelAccess" required><br><br>
+
+        <label for="ftpDetails">FTP/SFTP Details:</label>
+        <input type="text" id="ftpDetails" name="ftpDetails" placeholder="Host, username, password" required><br><br>
+
+        <label for="dbAccess">Database Access:</label>
+        <input type="text" id="dbAccess" name="dbAccess" placeholder="DB name, type, username, password" required><br><br>
+
+        <!-- Section 6: Additional Features -->
+        <h2>Additional Features</h2>
+        <label for="emailAccounts">Email Accounts:</label>
+        <input type="number" id="emailAccounts" name="emailAccounts" required><br><br>
+
+        <label for="backupOptions">Backup Options:</label>
+        <select id="backupOptions" name="backupOptions" required>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select><br><br>
+
+        <label for="techSupport">Technical Support:</label>
+        <select id="techSupport" name="techSupport" required>
+            <option value="24/7">24/7</option>
+            <option value="business_hours">Business Hours</option>
+        </select><br><br>
+
+        <!-- Section 7: Sustainability Information -->
+        <h2>Sustainability Information</h2>
+        <label for="energySource">Energy Source:</label>
+        <input type="text" id="energySource" name="energySource" required><br><br>
+
+        <label for="carbonOffset">Carbon Offset:</label>
+        <input type="text" id="carbonOffset" name="carbonOffset" required><br><br>
+
+        <label for="certifications">Certifications:</label>
+        <input type="text" id="certifications" name="certifications" required><br><br>
+
+        <!-- Section 8: Marketing Information -->
+        <h2>Marketing Information</h2>
+        <label for="seoTools">SEO Tools:</label>
+        <input type="text" id="seoTools" name="seoTools"><br><br>
+
+        <label for="analytics">Analytics:</label>
+        <input type="text" id="analytics" name="analytics"><br><br>
+
+        <!-- Section 9: Legal and Compliance -->
+        <h2>Legal and Compliance</h2>
+        <label for="termsOfService">Terms of Service Agreement:</label>
+        <input type="url" id="termsOfService" name="termsOfService" required><br><br>
+
+        <label for="privacyPolicy">Privacy Policy:</label>
+        <input type="url" id="privacyPolicy" name="privacyPolicy" required><br><br>
+
+        <!-- Section 10: Feedback and Ratings -->
+        <h2>Feedback and Ratings</h2>
+        <label for="userRatings">User Ratings (out of 5):</label>
+        <input type="number" id="userRatings" name="userRatings" max="5" min="0" required><br><br>
+
+        <label for="userReviews">User Reviews:</label>
+        <textarea id="userReviews" name="userReviews" rows="3"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script src="mscript.js"></script>
+
+</body>
+</html>
